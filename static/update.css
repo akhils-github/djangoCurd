@@ -1,0 +1,37 @@
+ /* Edit page */
+
+ .errorlist{
+ visibility:hidden
+ }
+
+#id_name,#id_year{
+    margin-bottom:15px;
+    width:100%;
+	color:#fff;
+	display:block;
+	border:none;
+	padding:15px 20px;
+	border-radius:25px;
+	background:rgba(255,255,255,.1);
+	color:#fff;
+	font-size:12px
+}
+#id_desc{
+
+}
+p label{
+    color: #aaa;
+    font-size: 12px;
+}
+.form-edit{
+margin-top:-70px;
+}
+.form-h2{
+font-size:22px;
+color:white;
+border-color:#1161ee;
+position:absolute;
+top:-75px;
+left:125px;
+}
+

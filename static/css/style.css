@@ -1,0 +1,21 @@
+.pad-bg {
+  background: #f8f8f8;
+  padding: 40px 20px;
+  border-radius: 5px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: 1px solid #e5e5e5;
+}
+h1 {
+  padding-bottom: 30px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  border-bottom: 1px dashed #ccc;
+}
+.bg-color {
+  background-color: pink;
+}
+.bold {
+  font-size: 25px;
+  font-weight: bold;
+}

@@ -1,0 +1,41 @@
+{% include 'index.html' %} {% block content %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Item name</th>
+            <th scope="col">Description</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for i in data_list %}
+          <tr>
+            <th scope="row">{{i.SINO}}</th>
+            <td>{{i.name}}</td>
+            <td>{{i.desc}}</td>
+            <td>
+              <a class="btn btn-danger" href="{%  url 'curd_app:delete' i.id %}"
+                >Delete</a
+              >
+            </td>
+            <td>
+              <a
+                class="btn btn-success"
+                href="{%  url 'curd_app:update' i.id %}"
+                role="button"
+                >Update</a
+              >
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+{% endblock %}
